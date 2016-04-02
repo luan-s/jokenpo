@@ -1,0 +1,44 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		title JKP
+		link( rel="stylesheet" type="txt/css" href="static/css/style.css")
+		link( rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+		link(href='https://fonts.googleapis.com/css?family=Roboto', rel='stylesheet', type='text/css')
+
+
+	body
+		.content.border
+			.titulo.border
+				spam#jo JO
+				|-
+				span#ken KEN
+				|-
+				span#po PO
+			.game-content.border
+				.user.border.box
+					i( class="fa fa-hand-rock-o" id="user").simbol
+					.rad.border.placar Vitórias: 
+						span.p1 0
+				.pc.border.box
+					i( class="fa fa-hand-rock-o" id="pc").simbol
+					.rad1.border.placar Vitórias: 
+						span.p2 0
+				.but.border
+					button#1.change.rock
+						i( class="fa fa-hand-rock-o")
+
+					button#2.change
+						i( class="fa fa-hand-paper-o")
+
+					button#3.change
+						i( class="fa fa-hand-peace-o")
+					button.start Jogar
+					button.restart Reiniciar
+					button.nivel#normal Normal
+					button.nivel#hard Hard
+
+		script(src="static/js/jquery.min.js")
+		script(src="static/js/script.js")
+
